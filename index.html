@@ -1,1 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tingnixi 的個人網站，介紹課程學習、技術與設計概念。" />
+  <title>Tingnixi | Personal Webpage</title>
+  <style>
+    :root {
+      --bg: #090b10;
+      --surface: #11151f;
+      --surface-strong: #1f2735;
+      --text: #e8ebf2;
+      --muted: #9aa5c3;
+      --accent: #6bd1ff;
+      --accent-strong: #4ec0ff;
+      --border: rgba(255, 255, 255, 0.08);
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      min-height: 100%;
+      background: radial-gradient(circle at top, rgba(107, 209, 255, 0.12), transparent 30%),
+                  linear-gradient(180deg, #0b0f17 0%, #090b10 100%);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.65;
+    }
+
+    body {
+      padding: 32px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      padding: 36px 24px;
+      margin-bottom: 32px;
+      border: 1px solid var(--border);
+      background: rgba(17, 23, 35, 0.8);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 5vw, 4rem);
+      margin-bottom: 16px;
+    }
+
+    p.lead {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      background: rgba(17, 23, 35, 0.88);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin-bottom: 16px;
+      font-size: 1.35rem;
+      color: #ffffff;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .card li::before {
+      content: '•';
+      color: var(--accent);
+      display: inline-block;
+      width: 1.2em;
+    }
+
+    .highlight {
+      color: var(--accent-strong);
+    }
+
+    .section-title {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      color: var(--text);
+      font-size: 1.2rem;
+    }
+
+    .note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 18px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 20px 12px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="eyebrow">Personal Webpage</div>
+      <h1>Hi, I’m <span class="highlight">Tingnixi</span>.</h1>
+      <p class="lead">這是一個以 GitHub Pages 建置的個人首頁，展示我在 CS351/IN321 AI-assisted Software Development 課程中的技術應用、設計概念與學習反思。</p>
+    </header>
+
+    <section class="card">
+      <h2>Site Overview</h2>
+      <p>這個網站主要用來呈現課程成果與個人學習心得。內容分成：</p>
+      <ul>
+        <li>Technologies used</li>
+        <li>Design concept</li>
+        <li>Personal reflection</li>
+      </ul>
+      <p class="note">所有內容皆放在單一頁面中，並使用簡潔的深色主題與響應式排版，適合 GitHub Pages 部署。</p>
+    </section>
+
+    <div class="grid">
+      <article class="card">
+        <h2>Technologies used</h2>
+        <p>我在這個網頁與課程中使用或理解的技術包括：</p>
+        <ul>
+          <li>HTML5 / CSS3 - 建構語意化網頁與樣式設計</li>
+          <li>GitHub Pages - 將靜態網站部署到 GitHub</li>
+          <li>Responsive design - 支援手機與桌機瀏覽</li>
+          <li>AI-assisted development - 結合 AI 工具來輔助開發與學習</li>
+          <li>版本控制與協作流程 - 使用 Git 進行團隊合作</li>
+          <li>Jira Story / 任務管理 - 規劃與分配開發任務</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Design concept</h2>
+        <p>網站採用深色風格，強調內容可讀性與簡潔結構：</p>
+        <ul>
+          <li>深色背景搭配冷色強調色，維持現代感與專業感</li>
+          <li>卡片式區塊與留白讓內容更容易閱讀</li>
+          <li>使用響應式網格排版，確保小螢幕上也能清楚呈現</li>
+          <li>以清晰標題與段落呈現課程關鍵資訊</li>
+        </ul>
+      </article>
+    </div>
+
+    <section class="card">
+      <h2>Personal reflection</h2>
+      <p>我在這堂課學到了在多個人共同開發的環境下，我們要如何使用 git 來共同協作、控制版本，以及使用 Jira 這個平台來建立 Story 等等，用於發配給不同成員任務。</p>
+      <p>這其中最有價值的是：</p>
+      <ul>
+        <li>理解團隊協作與版本控制的流程</li>
+        <li>體會任務拆解與工作分派的重要性</li>
+        <li>將 AI 工具整合進開發流程，提升效率與品質</li>
+      </ul>
+      <p class="note">未來我會繼續加強實際專案中的「協作溝通」、「問題追蹤」與「持續部署」能力，讓產品開發流程更加完整。</p>
+    </section>
+
+    <section class="card">
+      <h2>Course summary</h2>
+      <p>CS351/IN321 這門課的重點包含：</p>
+      <ul>
+        <li>AI-assisted 開發工具在軟體生命週期中的應用</li>
+        <li>透過 AI 支援進行需求理解、程式生成與除錯</li>
+        <li>敏捷協作、測試與 CI/CD 的實踐概念</li>
+        <li>負責任使用 AI 的倫理與資料安全議題</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>GitHub Pages site for <strong>tingnixi.github.io</strong>. Built as a course demonstration page for CS351/IN321.</p>
+    </footer>
+  </div>
+</body>
+</html>
