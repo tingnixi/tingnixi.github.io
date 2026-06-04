@@ -1,113 +1,142 @@
-﻿<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tingnixi 的個人網站，介紹課程學習、技術與設計概念。" />
-  <title>Tingnixi | Personal Webpage</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="container">
-    <header class="site-header">
-      <div class="brand">Tingnixi</div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#tech">Technologies</a>
-        <a href="#reflection">Reflection</a>
-        <a href="#course">Course</a>
-      </nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ting Nixi | Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <a class="logo" href="#home">Ting Nixi</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero container">
+        <p class="eyebrow">Personal Website</p>
+        <h1>Hi, I’m Ting. I build modern web experiences.</h1>
+        <p class="hero-text">
+          I create clean, responsive websites and digital portfolios with a focus on readability,
+          usability, and performance. This is a simple English homepage ready for your custom
+          content.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Personal Webpage</p>
-        <h1>CS351/IN321 AI-assisted Software Development</h1>
-        <p class="hero-lead">TEST CONTENT</p>
-        <div class="hero-actions">
-          <a class="button" href="#tech">查看技術重點</a>
-          <span class="hero-tag">Palette: #EDF1D6 / #9DC08B / #609966 / #40513B</span>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-card">
-          <h3>Course Highlights</h3>
-          <p>這個作品頁結合課程概念與個人學習歷程，透過簡潔溫潤的配色與現代排版，讓內容更易讀且具質感。</p>
-          <div class="hero-list">
-            <span>• GitHub Pages 展示部署</span>
-            <span>• 響應式設計與卡片式排版</span>
-            <span>• AI-assisted development 與協作流程</span>
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">About</p>
+            <h2>About Me</h2>
           </div>
-          <span class="hero-pill">Minimal modern design</span>
+          <p>
+            I am a web developer with a passion for building user-focused websites. I enjoy
+            translating ideas into polished pages using HTML, CSS, and JavaScript. My work is
+            focused on clarity, accessibility, and reliable experiences across devices.
+          </p>
+          <p>
+            Use this section to describe your background, education, interests, or the type of
+            projects you enjoy working on. Replace this text with your own story.
+          </p>
         </div>
+      </section>
+
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Skills</p>
+            <h2>What I Do</h2>
+          </div>
+          <div class="grid skills-grid">
+            <div class="card">
+              <h3>Web Development</h3>
+              <p>Responsive web design, semantic HTML, and interactive front-end development.</p>
+            </div>
+            <div class="card">
+              <h3>UI / UX</h3>
+              <p>Clear interface layout, readable typography, and strong visual hierarchy.</p>
+            </div>
+            <div class="card">
+              <h3>Tools</h3>
+              <p>HTML, CSS, JavaScript, Git, and modern browser workflows.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Projects</p>
+            <h2>Featured Work</h2>
+          </div>
+          <div class="grid project-grid">
+            <article class="project-card">
+              <h3>Personal Portfolio</h3>
+              <p>A clean one-page portfolio highlighting skills, experience, and contact details.</p>
+            </article>
+            <article class="project-card">
+              <h3>Landing Page</h3>
+              <p>A responsive landing page designed for a small business or creative project.</p>
+            </article>
+            <article class="project-card">
+              <h3>Blog Template</h3>
+              <p>A modern blog layout with readable typography, clear navigation, and mobile support.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Contact</p>
+            <h2>Get in Touch</h2>
+          </div>
+          <p>
+            If you are interested in collaborating or want to learn more, send a message using the
+            email below or connect on GitHub.
+          </p>
+          <div class="contact-grid">
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+            </div>
+            <div>
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/tingnixi" target="_blank" rel="noopener noreferrer">github.com/tingnixi</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Built with a clean HTML/CSS template. Replace this content with your name and links.</p>
       </div>
-    </section>
-
-    <section id="about" class="intro-card">
-      <h2>Site Overview</h2>
-      <p>TEST CONTENT</p>
-      <ul>
-        <li>技術運用與實作重點</li>
-        <li>設計概念與視覺風格</li>
-        <li>個人反思與課程總結</li>
-      </ul>
-      <p class="note">TEST CONTENT</p>
-    </section>
-
-    <div class="grid">
-      <article id="tech" class="card">
-        <h2>Technologies used</h2>
-        <p>我在這個專案中實際應用或深入理解的技術，涵蓋前端、部署與團隊協作三大面向：</p>
-        <ul>
-          <li>HTML5 / CSS3 - 建立語意化結構與現代化深色介面</li>
-          <li>GitHub Pages - 使用 GitHub 的靜態網站服務進行快速部署</li>
-          <li>Responsive design - 透過彈性排版確保手機與桌機環境都有良好體驗</li>
-          <li>AI-assisted development - 將 AI 工具納入內容生成與文案優化流程</li>
-          <li>版本控制與協作流程 - 練習 Git 分支、提交與合併策略</li>
-          <li>Jira Story / 任務管理 - 透過 Story 與任務分配管理開發進度與需求</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>Design concept</h2>
-        <p>本網站以柔和綠色調為核心，結合簡潔卡片式布局，強調資訊層次與視覺節奏：</p>
-        <ul>
-          <li>淺綠背景搭配沉穩點綴，打造清新又專業的氛圍</li>
-          <li>卡片區塊與明確間距，讓內容段落更容易閱讀與吸收</li>
-          <li>響應式網格設計，確保不同螢幕尺寸下資訊呈現一致</li>
-          <li>標題與重點文字使用明亮色調，引導閱讀焦點</li>
-        </ul>
-      </article>
-    </div>
-
-    <section id="reflection" class="card">
-      <h2>Personal reflection</h2>
-      <p>這堂課讓我重新審視 AI 與軟體開發結合的實際價值，從工具使用到團隊協作，每一步都強化了我的系統思維。</p>
-      <p>我認為最重要的收穫在於：</p>
-      <ul>
-        <li>理解如何用 Git 管理版本、協調多人開發與變更歷史</li>
-        <li>體會 Jira 任務拆解與分配對專案進度管理的關鍵作用</li>
-        <li>學會將 AI 輔助流程融入需求分析、內容產出與迭代修正</li>
-        <li>建立更清晰的設計思維，讓技術實作與使用者體驗相互補強</li>
-      </ul>
-      <p class="note">未來我希望持續提升專案溝通、問題追蹤與自動化部署能力，讓每一次開發都更有紀律、更能快速回應需求變化。</p>
-    </section>
-
-    <section id="course" class="card">
-      <h2>Course summary</h2>
-      <p>CS351/IN321 的課程內容涵蓋 AI-assisted development 的實務應用，並強調負責任的技術實踐與團隊合作。</p>
-      <ul>
-        <li>AI 助手在需求理解、程式生成與除錯中的實際角色</li>
-        <li>以敏捷流程管理軟體生命週期與團隊協作</li>
-        <li>測試、版本控制與 CI/CD 概念的整合應用</li>
-        <li>AI 使用中的倫理考量、資料安全與可解釋性</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>這是為 CS351/IN321 課程準備的 GitHub Pages 個人作品頁，展示我對技術與設計的思考。</p>
     </footer>
-  </div>
-</body>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navList = document.querySelector('.nav-list');
+      navToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+      });
+    </script>
+  </body>
 </html>
