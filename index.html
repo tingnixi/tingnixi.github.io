@@ -1,142 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ting Nixi | Personal Website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Tim Wu - Computer Science Student</title>
+    <meta name="description" content="Portfolio of Tim Wu, a CS student from Taiwan building things that actually work." />
   </head>
   <body>
-    <header class="site-header" id="home">
-      <div class="container header-inner">
-        <a class="logo" href="#home">Ting Nixi</a>
-        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-        <nav>
-          <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="hero container">
-        <p class="eyebrow">Personal Website</p>
-        <h1>Hi, I’m Ting. I build modern web experiences.</h1>
-        <p class="hero-text">
-          I create clean, responsive websites and digital portfolios with a focus on readability,
-          usability, and performance. This is a simple English homepage ready for your custom
-          content.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View Projects</a>
-          <a class="button secondary" href="#contact">Contact Me</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-eyebrow">About</p>
-            <h2>About Me</h2>
-          </div>
-          <p>
-            I am a web developer with a passion for building user-focused websites. I enjoy
-            translating ideas into polished pages using HTML, CSS, and JavaScript. My work is
-            focused on clarity, accessibility, and reliable experiences across devices.
-          </p>
-          <p>
-            Use this section to describe your background, education, interests, or the type of
-            projects you enjoy working on. Replace this text with your own story.
-          </p>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="skills">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-eyebrow">Skills</p>
-            <h2>What I Do</h2>
-          </div>
-          <div class="grid skills-grid">
-            <div class="card">
-              <h3>Web Development</h3>
-              <p>Responsive web design, semantic HTML, and interactive front-end development.</p>
-            </div>
-            <div class="card">
-              <h3>UI / UX</h3>
-              <p>Clear interface layout, readable typography, and strong visual hierarchy.</p>
-            </div>
-            <div class="card">
-              <h3>Tools</h3>
-              <p>HTML, CSS, JavaScript, Git, and modern browser workflows.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-eyebrow">Projects</p>
-            <h2>Featured Work</h2>
-          </div>
-          <div class="grid project-grid">
-            <article class="project-card">
-              <h3>Personal Portfolio</h3>
-              <p>A clean one-page portfolio highlighting skills, experience, and contact details.</p>
-            </article>
-            <article class="project-card">
-              <h3>Landing Page</h3>
-              <p>A responsive landing page designed for a small business or creative project.</p>
-            </article>
-            <article class="project-card">
-              <h3>Blog Template</h3>
-              <p>A modern blog layout with readable typography, clear navigation, and mobile support.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="contact">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-eyebrow">Contact</p>
-            <h2>Get in Touch</h2>
-          </div>
-          <p>
-            If you are interested in collaborating or want to learn more, send a message using the
-            email below or connect on GitHub.
-          </p>
-          <div class="contact-grid">
-            <div>
-              <h3>Email</h3>
-              <p><a href="mailto:hello@example.com">hello@example.com</a></p>
-            </div>
-            <div>
-              <h3>GitHub</h3>
-              <p><a href="https://github.com/tingnixi" target="_blank" rel="noopener noreferrer">github.com/tingnixi</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>Built with a clean HTML/CSS template. Replace this content with your name and links.</p>
-      </div>
-    </footer>
-
-    <script>
-      const navToggle = document.querySelector('.nav-toggle');
-      const navList = document.querySelector('.nav-list');
-      navToggle.addEventListener('click', () => {
-        navList.classList.toggle('active');
-      });
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
